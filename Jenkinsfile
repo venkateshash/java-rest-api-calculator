@@ -17,7 +17,7 @@ pipeline {
             post {
                 always {
                     junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts artifacts:'**/*.jsp,**/*.war,**/*.xml',followSymlinks:false
+                    archiveArtifacts artifacts:'**/*.jsp,**/*.war,**/*.xml,**/*.jar',followSymlinks:false
                 }
             }
        }
